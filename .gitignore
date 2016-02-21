@@ -48,4 +48,3 @@ Temporary Items
 *.sublime-workspace
 *.local
 .parse.project
-cloud/node_modules
