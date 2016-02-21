@@ -45,6 +45,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-*.sublime-workspace
-*.local
-.parse.project
+node_modules

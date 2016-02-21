@@ -8,8 +8,8 @@ meta(http-equiv='X-UA-Compatible', content='IE=edge')
 meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
 title Jikopster vk a sync
 meta(name='description', content=__('slogan'))
-link(rel='stylesheet', href='assets/css/bootstrap.min.css')
-link(rel='stylesheet', href='assets/css/jessica.css')
+link(rel='stylesheet', href='/assets/css/bootstrap.min.css')
+link(rel='stylesheet', href='/assets/css/jikopster.css')
 
 .jumbotron
   .container-fluid
@@ -19,7 +19,7 @@ link(rel='stylesheet', href='assets/css/jessica.css')
 
 .container-fluid
   p
-    a(class='btn btn-default btn-lg', href='//jikopster.org/apk/org.jikopster.vkasync.1.7.4.19.apk', download, type='application/vnd.android.package-archive')
+    a(class='btn btn-default btn-lg', download, type='application/vnd.android.package-archive', href='//jikopster.org/apk/org.jikopster.vkasync.1.7.4.19.apk')
       = __('Download')
       br
       small
@@ -32,4 +32,4 @@ link(rel='stylesheet', href='assets/css/jessica.css')
     ul.nav.nav-pills
       each l in locales
         li(class=(l == locale)?'active':'')
-          a(href='?lang='+l)=l
+          a(href='?'+locales.param+'='+l)=l
