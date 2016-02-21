@@ -1,0 +1,35 @@
+doctype html
+
+<!-- Jikopster wuz here -->
+
+html(lang=locale)
+meta(charset='utf-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+title Jikopster vk a sync
+meta(name='description', content=__('slogan'))
+link(rel='stylesheet', href='assets/css/bootstrap.min.css')
+link(rel='stylesheet', href='assets/css/jessica.css')
+
+.jumbotron
+  .container-fluid
+    h1 Jikopster vk a sync
+    p
+      = __('slogan')
+
+.container-fluid
+  p
+    a(class='btn btn-default btn-lg', href='//jikopster.org/apk/org.jikopster.vkasync.1.7.4.19.apk', download, type='application/vnd.android.package-archive')
+      = __('Download')
+      br
+      small
+        = __('apk')
+
+
+.container-fluid.footer
+  p Jikopster wuz here
+  p
+    ul.nav.nav-pills
+      each l in locales
+        li(class=(l == locale)?'active':'')
+          a(href='?lang='+l)=l

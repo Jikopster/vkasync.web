@@ -1,0 +1,44 @@
+html,
+body {
+  background: #5196F3;
+  color: white;
+}
+
+.jumbotron {
+  background: none;
+}
+
+.container-fluid,
+.container-fluid * {
+  text-align: center;
+}
+
+.btn {
+  border-color: white !important;
+  box-shadow: none !important;
+}
+.btn,
+.btn:focus {
+  background: none;
+  color: white;
+}
+.btn:hover,
+.btn:active {
+  background: white !important;
+  color: #5196F3;
+}
+
+.nav-pills {
+  text-transform: uppercase;
+  display: inline-block !important;
+}
+.nav-pills > li > a:not(:hover):not(:focus) {
+  color: white;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
