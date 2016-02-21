@@ -1,7 +1,8 @@
 {
   "name": "vkasync.web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Jikopster vk a sync website",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +12,16 @@
     "url": "git+https://github.com/Jikopster/vkasync.web.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jikopster Orglobster",
   "bugs": {
     "url": "https://github.com/Jikopster/vkasync.web/issues"
   },
-  "homepage": "https://github.com/Jikopster/vkasync.web#readme"
+  "homepage": "https://github.com/Jikopster/vkasync.web#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "i18n": "^0.7.0",
+    "jade": "^1.11.0",
+  }
 }
