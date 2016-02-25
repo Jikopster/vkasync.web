@@ -18,37 +18,6 @@ body {
   margin: 0 auto;
 }
 
-.container-fluid,
-.container-fluid * {
+.jumbotron {
   text-align: center;
-}
-
-.btn {
-  border-color: white !important;
-  box-shadow: none !important;
-}
-.btn,
-.btn:focus {
-  background: none;
-  color: white;
-}
-.btn:hover,
-.btn:active {
-  background: white !important;
-  color: #5196F3;
-}
-
-.nav-pills {
-  text-transform: uppercase;
-  display: inline-block !important;
-}
-.nav-pills > li > a:not(:hover):not(:focus) {
-  color: white;
-}
-
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
