@@ -33,6 +33,7 @@
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-less": "^1.2.0",
-    "grunt-pixar": "^1.0.1"
+    "grunt-pixar": "^1.0.1",
+    "grunt-webfont": "^1.1.1"
   }
 }

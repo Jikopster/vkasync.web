@@ -1,0 +1,16 @@
+mixin item(date, title)
+  article
+    h3
+      span.label.label-default
+        = date
+      | 
+      = title
+    block
+
+extends layout.jade
+
+block title
+  = __("What's new")
+
+block content
+  +item('2016-02-25', 'v1.8.0 is here') brrr

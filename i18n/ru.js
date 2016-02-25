@@ -3,5 +3,11 @@
 	"Download": "Скачать",
 	"apk": "приложение для Android",
 	"current": "текущий",
-	"language": "language"
+	"language": "language",
+	"Downloads": "Загрузки",
+	"What's new": "Что нового",
+	"GitHub": "GitHub",
+	"vk": "vk",
+	"en": "en",
+	"ru": "ru"
 }

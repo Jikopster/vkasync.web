@@ -11,14 +11,14 @@ block body
           img.img-responsive(src='/assets/img/logo-plain.png')
         .col-md-8
           h1: include logo.jade
-          p vk a sync
+          h1 vk audio sync
           p
             = __('slogan')
 
   .container
-    p
-      a(class='btn btn-default btn-lg', download, type='application/vnd.android.package-archive', href='//jikopster.org/apk/org.jikopster.vkasync.1.7.4.19.apk')
-        = __('Download')
-        br
-        small
-          = __('apk')
+    .row
+      .col-sm-8.col-sm-push-4
+        include columns/news.jade
+      .col-sm-4.col-sm-pull-8
+        include columns/files.jade
+        include columns/links.jade

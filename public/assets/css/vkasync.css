@@ -21,3 +21,26 @@ body {
 .jumbotron {
   text-align: center;
 }
+
+.icon.social {
+  font-size: 48px;
+}
+.lang {
+  line-height: 3.1;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+}
+.rotor {
+  transition: transform 0.5s;
+}
+.rotor:hover {
+  transform: rotate(-345deg);
+}
+
+.img-responsive {
+  margin: auto;
+}
