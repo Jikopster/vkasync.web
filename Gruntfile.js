@@ -1,57 +1,22 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-    pixar: {
-      logo: {
-        src: 'logo/logo.json',
-        dest: 'logo/logo.jade'
-      }
-    },
-    less: {
-      logo: {
-          options: {
-            strictUnits: true
-          },
-          src: 'logo/logo.less',
-          dest: 'logo/logo.css'
-      }
-    },
-    cssmin: {
-      logo: {
-        src: 'logo/logo.css',
-        dest: 'logo/logo.min.css'
-      }
+    clean: {
+      bootstrap: 'public/assets/css/bootstrap.*'
     },
     copy: {
-      logo: {
-        nonull: true,
-        files: [
-          {
-            src: 'logo/logo.min.css',
-            dest: 'public/assets/css/logo.min.css'
-          },
-          {
-            src: 'logo/logo.jade',
-            dest: 'views/logo.jade'
-          }
-        ]
-      },
       bootstrap: {
         expand: true,
         cwd: 'bootstrap-3.3.6/dist/',
-        src: '**',
+        src: 'css/bootstrap.min.css',
         dest: 'public/assets/'
       }
     }
   })
   
-  grunt.registerTask('logo', ['pixar:logo', 'less:logo', 'cssmin:logo', 'copy:logo'])
+  grunt.registerTask('bootstrap', ['clean:bootstrap', 'copy:bootstrap'])
   
-  grunt.registerTask('bootstrap', ['copy:bootstrap'])
+  grunt.registerTask('default', ['bootstrap'])
   
-  grunt.registerTask('default', ['logo', 'bootstrap'])
-  
-  grunt.loadNpmTasks('grunt-pixar')
-  grunt.loadNpmTasks('grunt-contrib-less')
-  grunt.loadNpmTasks('grunt-contrib-cssmin')
+  grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-contrib-copy')
 }
