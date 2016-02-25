@@ -1,11 +1,21 @@
 html,
 body {
+/*
   background: #5196F3;
   color: white;
+*/
 }
 
 .jumbotron {
-  background: none;
+/*  background: none;*/
+}
+
+.jikopster {
+  line-height: 0.18;
+}
+
+.jumbotron img {
+  margin: 0 auto;
 }
 
 .container-fluid,

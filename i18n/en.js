@@ -1,5 +1,7 @@
 {
 	"slogan": "One tap to get syncs done",
 	"Download": "Download",
-	"apk": "Android app"
+	"apk": "Android app",
+	"current": "current",
+	"language": "язык"
 }

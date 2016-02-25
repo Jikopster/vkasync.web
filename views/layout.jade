@@ -1,0 +1,25 @@
+doctype html
+// Jikopster wuz here
+html(lang=locale)
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+  block title
+    title Jikopster vk a sync
+  meta(name='description', content=__('slogan'))
+  link(rel='stylesheet', href='/assets/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/assets/css/vkasync.css')
+  block head
+  
+  block body
+
+  block feet
+    nav.navbar.navbar-fixed-bottom.navbar-default
+      .container-fluid
+        p.navbar-text Jikopster wuz here
+        ul.nav.navbar-nav.navbar-right
+          each l in locales
+            li(class=(l == locale)?'active':'')
+              a(href='?'+locales.param+'='+l)=l
+              if l == locale
+                span.sr-only: = __('current')
