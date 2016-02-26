@@ -38,7 +38,7 @@
 .rotor {
   display: inline-block;
   margin: 10px;
-  outline: none;
+  outline: none !important;
           transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
 }
