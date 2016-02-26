@@ -1,22 +1,26 @@
 var http = require('http')
 var Date = require(__dirname + '/date.js')
 
-var proto = module.exports = function(locale) {
+var proto = module.exports = function(locale, domain) {
+  this.domain = domain || 'jikopster.vkasync'
   this.locale = locale
 }
 
 proto = proto.prototype
 
 proto.map = {
-  en: '',
-  ru: '.ru',
+  ru: domain => 'ru.'+domain,
+}
+
+proto.domainLocal = function() {
+  var locale = this.locale || ''
+  var map = this.map[locale] || (domain => domain)
+  return map(this.domain)
 }
 
 proto.get = function(listener) {
-  var self = this
-  var locale = this.locale || ''
-  if (locale) locale = this.map[locale] || ''
-  var domain = 'jikopster.vkasync'+locale
+  var self = this 
+  var domain = this.domainLocal()
   var url = 'https://vk.com/' + domain
   function exception(text) {
     return new self.Result(new self.Exception(text), url)
