@@ -14,22 +14,31 @@
 }
 .jumbotron h1 > .icon {
   font-size: 108%;
-  line-height: 0.1;
 }
 
+.icon {
+  text-decoration: none !important;
+}
+.icon:not(.social) {
+  line-height: .1;
+}
 .icon.social {
   font-size: 48px;
 }
+
 .lang {
-  line-height: 3.1;
+  line-height: 2.9;
   border-radius: 50%;
   border-width: 1px;
   border-style: solid;
-  width: 46px;
-  height: 46px;
+  width: 43px;
+  height: 43px;
   display: inline-block;
 }
 .rotor {
+  display: inline-block;
+  margin: 10px;
+  outline: none;
           transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
 }

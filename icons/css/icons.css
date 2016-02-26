@@ -3,10 +3,10 @@
 
 @font-face {
 	font-family:"icons";
-	src:url("../fonts/icons.eot?9d55ba2d89a2b29debbf4b2b386bf1dd");
+	src:url("../fonts/icons.eot?d45bcc1f87ca92d76462826b3d8614e1");
 	src:url("../fonts/icons.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/icons.woff?9d55ba2d89a2b29debbf4b2b386bf1dd") format("woff"),
-		url("../fonts/icons.ttf?9d55ba2d89a2b29debbf4b2b386bf1dd") format("truetype");
+		url("../fonts/icons.woff?d45bcc1f87ca92d76462826b3d8614e1") format("woff"),
+		url("../fonts/icons.ttf?d45bcc1f87ca92d76462826b3d8614e1") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -47,11 +47,16 @@
 }
 
 
-.icon_vk-clear:before {
+.icon_open:before {
 	content:"\f104";
 }
 
 
-.icon_vk:before {
+.icon_vk-clear:before {
 	content:"\f105";
+}
+
+
+.icon_vk:before {
+	content:"\f106";
 }
