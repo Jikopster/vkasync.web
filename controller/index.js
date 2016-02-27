@@ -1,4 +1,4 @@
-var VK = require(__dirname+'/../model/vk.js')
+var VK = require('vk')
 
 module.exports = function(req, res) {
   var locale = res.locals.locale
