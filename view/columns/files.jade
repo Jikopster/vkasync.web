@@ -8,13 +8,12 @@ block title
     |  2.3+
 
 mixin item(v)
-  
-    a.btn.btn-lg.btn-default(href='http://apk.jikopster.org/org.jikopster.vkasync.#{v}.apk', download type='application/vnd.android.package-archive')
-      span.icon.icon_download
-      | 
-      = v
+  a.btn.btn-lg.btn-block.btn-default(href='http://apk.jikopster.org/org.jikopster.vkasync.#{v}.apk', download type='application/vnd.android.package-archive')
+    span.icon.icon_download
     | 
+    = v
+  | 
 
 block content
-  +item('1.9.0.21')
+  +item('1.10.0.22')
   +item('1.7.4.19')
